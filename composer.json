@@ -22,7 +22,7 @@
         "symfony/routing": ">=4.0"
     },
     "autoload": {
-        "psr-4": { "Tetranz\\Select2EntityBundle\\": "" }
+        "psr-4": { "Tetranz\\Select2EntityBundle\\": "src/" }
     },
     "extra": {
         "branch-alias": {
