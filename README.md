@@ -1,4 +1,5 @@
-## This project is not maintained.
+> [!IMPORTANT]
+> This project is a fork of [tetranz/select2entity-bundle](https://github.com/tetranz/select2entity-bundle), updated for compatibility with Symfony 8.x (or the latest versions).
 
 select2entity-bundle
 ====================
@@ -40,20 +41,20 @@ These files live in the Resources/public/js and Resources/public/css folders of 
 
 Alternatively, minified versions of select2.js and select2.css can be loaded from the CloudFlare CDN using the two lines of code given here: [https://select2.github.io](https://select2.github.io). Make sure the script tag comes after where jQuery is loaded. That might be in the page footer.
 
-* Add `tetranz/select2entity-bundle` to your projects `composer.json` "requires" section:
+* Add `wakonda/select2entity-bundle` to your projects `composer.json` "requires" section:
 
 ```javascript
 {
     // ...
     "require": {
         // ...
-        "tetranz/select2entity-bundle": "2.*"
+        "wakonda/select2entity-bundle": "*"
     }
 }
 ```
-Note that this only works with Select2 version 4. If you are using Select2 version 3.X please use `"tetranz/select2entity-bundle": "1.*"` in `composer.json`
+Note that this only works with Select2 version 4. If you are using Select2 version 3.X please use `"wakonda/select2entity-bundle": "1.*"` in `composer.json`
 
-* Run `php composer.phar update tetranz/select2entity-bundle` in your project root.
+* Run `php composer.phar update wakonda/select2entity-bundle` in your project root.
 * Update your project `config/bundles.php` file and add this bundle to the $bundles array:
 
 ```php
@@ -79,7 +80,7 @@ twig:
 
 ## How to use
 
-The following is for Symfony 4. See https://github.com/tetranz/select2entity-bundle/tree/v2.1 for Symfony 2/3 configuration and use.
+The following is for Symfony or more. See https://github.com/Wakonda/select2entity-bundle/tree/v2.1 for Symfony 2/3 configuration and use.
 
 Select2Entity is simple to use. In the buildForm method of a form type class, specify `Select2EntityType::class` as the type where you would otherwise use `entity:class`.
 
